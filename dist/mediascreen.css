@@ -1,0 +1,156 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .navbar {
+    transform: scale(1);
+    background-color: transparent;
+    position: static;
+    top: 0;
+    line-height: normal;
+    float: right;
+    box-shadow: unset;
+    margin-right: 60px;
+  }
+  .navbar ul {
+    display: flex;
+  }
+  .navbar li {
+    border-bottom: transparent !important;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .bg-section img {
+    margin-left: 80px;
+  }
+  .bg-section:before {
+    background: no-repeat center/cover url(images/image-hero-desktop.jpg);
+  }
+  .container {
+    width: 600px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .back-btn {
+    width: 180px;
+  }
+  .bookmark-checker {
+    width: 160px;
+  }
+  .bookmark-checker span {
+    margin: 12px 0 0 60px;
+    text-align: start;
+  }
+  .mastercraft-section p {
+    margin-bottom: 50px;
+  }
+  .mastercraft-section h1 {
+    font-size: 25px;
+    margin-bottom: 16px;
+  }
+  .stats {
+    height: 200px;
+    text-align: start;
+  }
+  .counts-numbers {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .backed-counts::after,
+  .total-backers::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: unset;
+    right: -10px;
+    margin: 0;
+    width: 70px;
+    height: 1px;
+    background-color: #e7e7e7;
+    transform: rotate(90deg);
+  }
+  .backed-counts,
+  .total-backers,
+  .dayz-left {
+    margin-bottom: 50px;
+  }
+
+  .pledge {
+    height: 230px;
+  }
+  .pledge-head,
+  .pledge-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pledge-footer {
+    flex-wrap: nowrap !important;
+  }
+  .modal-pledges .pledge:first-of-type {
+    height: 160px !important;
+  }
+.modal-pledges .pledge:nth-of-type(3) .pledge-footer {
+  margin-top: 40px;
+}
+  .modal-pledges .pledge:not(:first-of-type) {
+    height: 145px;
+  }
+  .modal-pledges .pledge .label {
+    width: 100% !important;
+  }
+  .modal-pledges .pledge .label label {
+    margin-left: 8px;
+  }
+  .modal-pledges .pledge p:not(.pledge-description, .pledge-footer p) {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  .modal-pledges .pledge .pledge-footer p {
+    text-align: start;
+  }
+  .selected-pledge {
+    height: 220px !important;
+  }
+  .divider {
+    top: 140px;
+  }
+  .succeeded-modal .container {
+    width: 440px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .close-modal,
+  .pledge label,
+  button,
+  svg,
+  .bookmark-checker {
+    transition: all .4s linear;
+    cursor: pointer;
+  }
+  .pledge label:hover {
+    color: hsl(176, 50%, 47%);
+    font-weight: 800;
+  }
+  .close-modal:hover {
+    filter: drop-shadow(0px 0px 0px black);
+  }
+  .modal-pledges .pledge .pledge-footer input {
+    width: 50px;
+    text-align: center;
+  }
+  .back-btn:hover,
+  .about-project .pledge-footer button:hover {
+    background-color: rgb(20, 123, 116);
+  }
+  .bookmark-checker:hover {
+    opacity: .5;
+  } 
+}
